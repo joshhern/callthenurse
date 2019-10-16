@@ -1,0 +1,27 @@
+@{
+    ViewData["title"] = "Create Your Account";
+}
+
+<h1>@ViewData["title"]</h1>
+
+<form action="/home/index" method="post">
+    <div class="form-group">
+        <input type="text" name="firstName" class="form-control" required placeholder="First Name">
+    </div>
+    <div class="form-group">
+        <input type="text" name="lastName" class="form-control" required placeholder="Last Name">
+    </div>
+    <div class="form-group">
+        <input type="int" name="phone" class="form-control" required placeholder="Phone">
+    </div>
+    <div class="form-group">
+        <input type="text" name="address" class="form-control" required placeholder="Address">
+    </div>
+    <div class="form-group">
+        <input type="text" name="email" class="form-control" required placeholder="Email">
+    </div>
+    
+
+    <input type="submit" class="btn btn-primary" value="Register">
+
+</form>
